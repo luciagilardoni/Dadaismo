@@ -1,0 +1,124 @@
+*{margin: 0%;padding: 0%;}*
+body{overflow-x: hidden;}
+
+header {background-color: white;}
+
+.menu a {font-size: 25px; text-transform: uppercase;font-family: 'Truculenta', sans-serif;letter-spacing: 2px;}
+
+.navbar-collapse {justify-content: space-between;margin-top: 2%;margin-left: 1%;}
+
+.navbar-light .navbar-nav .nav-link 
+{color:#BA2221;;transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s;padding: 15px;} 
+
+.navbar-light .navbar-nav .nav-link:hover 
+{color:#E9DBBB;border-bottom:2px solid #E9DBBB;transform: scale(1.1, 1.1)}
+
+
+.btn-outline-success {color:#BA2221;font-weight: bold;transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s;border: none;width: 60px;
+    height: 50px;
+    border-radius: 50px;font-size: 20px;} 
+
+.btn-outline-success:hover {color:#E9DBBB;transform: scale(1.1, 1.1);;background-color: #BA2221;;width: 60px;
+    height: 50px;
+    border-radius: 50px;font-size: 20px}
+
+.form-control {border-color: #BA2221; border-radius: 50px;font-family: 'Truculenta', sans-serif;}
+
+/* PARTE HOME */
+
+.home {width: 100%; box-shadow: 0 0 20px black;margin-bottom: 2%;}
+
+.fondo {background-image: url("../img/fondo.jpg");
+    background-repeat: no-repeat;
+    background-position:center center ;
+    background-attachment: fixed;
+    background-size: cover ;padding: 5%;}
+
+
+.dadatexto {color: #E9DBBB;;padding:5%;
+    font-size: 25px;font-family: 'Truculenta', sans-serif;;background-color: #BA2221;border-radius: 25px;width: 120%;
+    margin-top: 21%; box-shadow: 0 0 20px black;font-weight:500}
+
+.dada {width: 80%;margin: auto;background: none;border: none;}
+
+.senor {margin-top: -42%; margin-left: -65%; position: relative; filter:drop-shadow(0 0 20px black);}
+
+.img-fluid {max-width:200%;}
+
+p {font-size: 22px;font-family: 'Truculenta', sans-serif;}
+
+h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;font-family: 'Truculenta', sans-serif;}
+.rojo {font-style: italic;font-size: 25px;color: #BA2221;}
+
+/* PARTE HISTORIA*/
+
+/* PARTE ARTISTAS */
+
+/* PARTE GALERIA */
+
+.obras h5 {color:#BA2221;text-align: center;}
+.obras h4 {color:#BA2221;text-align: center;font-style: normal;font-size: 15px;text-transform: uppercase;}
+.obras {transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s;background-color:#E9DBBB; padding: 3%; margin: 5%; border-radius: 62px;}
+.obras:hover {transform: scale(1.2, 1.2) }
+
+figure { display: inline-block; position: relative;overflow: hidden;border-radius: 62px }
+ 
+
+figcaption {position: absolute;left: 0%;bottom: -95%; background-color: rgb(186, 34, 33,0.6)
+     ;width: 100%; 
+    padding: 3%; ;transition: all 0.3s; ;}
+
+.figure-caption {color:#E9DBBB;font-size: 15px;font-family: 'Truculenta', sans-serif;text-align: center;}
+
+figure:hover figcaption {bottom: 0%; }
+.figure-img {margin-bottom: 0%;}
+
+
+
+
+/* PARTE FILOSOFIA */
+
+.carousel-item {transition: transform 2s ease, opacity .5s ease-out}
+.carousel {width: 90%;margin: auto;}
+.carousel-control-prev {left: -10%;}
+.carousel-control-next {right: -10%;}
+
+.carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {filter: none;}
+.carousel-caption {bottom: 77%;}
+
+.carousel-control-prev-icon {background-image : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ba2221'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");}
+
+.carousel-control-next-icon {
+    background-image : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ba2221'><path d='M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z'/></svg>");}
+
+.carousel-indicators {bottom: -8%;}
+.carousel-dark .carousel-indicators [data-bs-target] {
+    background-color:#BA2221}
+.carousel-indicators [data-bs-target] {width: 58px;height: 9px;}
+
+.carousel-control-next-icon, .carousel-control-prev-icon {
+    display: inline-block;
+    width: 69px;
+    height: 59px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 200% 200%;
+}
+.carousel-dark .carousel-caption {font-family: 'Truculenta', sans-serif;}
+
+/* PARTE CONTACTO */
+
+
+
+
+footer {background-color: #E9DBBB;color:#BA2221 ;font-size: 19px;font-family: 'Truculenta', sans-serif;letter-spacing: 4px;}
+
+.footer a {font-size: 20px;font-family: 'Truculenta', sans-serif;; color: #ba2221;text-decoration: none; 
+    transition-property: all; transition: 1s;;}
+.footer a:hover {transition: 1s;font-size: 20px}
