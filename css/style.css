@@ -3,18 +3,20 @@ body{overflow-x: hidden;}
 
 header {background-color: white;}
 
-.menu a {font-size: 25px; text-transform: uppercase;font-family: 'Truculenta', sans-serif;letter-spacing: 2px;}
+.menu a {text-transform: uppercase;font-family: 'Truculenta', sans-serif;letter-spacing: 2px;}
 
-.navbar-collapse {justify-content: space-between;margin-top: 2%;margin-left: 1%;}
+.navbar-collapse {justify-content: space-between;;margin-left: 40%;}
 
 .navbar-light .navbar-nav .nav-link 
 {color:#BA2221;;transition-timing-function: ease;
     transition-property: all;
-    transition: 1s;padding: 15px;} 
+    transition: 1s;padding: 15px;padding-bottom: 5px;} 
 
 .navbar-light .navbar-nav .nav-link:hover 
-{color:#E9DBBB;border-bottom:2px solid #E9DBBB;transform: scale(1.1, 1.1)}
+{color:#E9DBBB;border-bottom:1px solid #E9DBBB;transform: scale(1.1, 1.1)}
 
+.dropdown-item {color:#BA2221}
+.dropdown-item:hover {color:#E9DBBB}
 
 .btn-outline-success {color:#BA2221;font-weight: bold;transition-timing-function: ease;
     transition-property: all;
@@ -28,7 +30,26 @@ header {background-color: white;}
 
 .form-control {border-color: #BA2221; border-radius: 50px;font-family: 'Truculenta', sans-serif;}
 
-.titulos {margin-left: -18%;width: 300%; margin-top: -4%;}
+@keyframes titulos 
+{
+   0% {opacity: 0%;transform: translateY(-100%);width: 50%;}
+
+   100% {opacity: 100%;width: 50%;} }
+
+.titulos {color:#E9DBBB;animation-name: titulos;
+    animation-duration: 4s;
+    font-size: 60px;
+    font-family: 'Truculenta', sans-serif;
+    letter-spacing: 0.1em;
+    font-weight: 700;
+    background-color:rgb(186, 34, 33,0.8) ;
+    text-transform: uppercase;
+    width: 50%;
+    border-bottom: 10px solid #E9DBBB;
+    border-right: 10px solid #E9DBBB; text-align: center;
+    margin: auto;
+    margin-bottom: 3%;
+}
 
 /* PARTE HOME */
 
@@ -57,7 +78,13 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 .rojo {font-style: italic;font-size: 25px;color: #BA2221;}
 
 /* PARTE HISTORIA*/
+.genero {background-color: #E9DBBB;border-radius: 10px;width: 80%;margin: auto;transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s;filter:drop-shadow(0 0 20px black);}
+.genero:hover {transform: scale(1.2, 1.2);filter:drop-shadow(0 0 20px black);}
 
+.txt {background-color: #BA2221;padding-left: 2%;}
+.gen {border-radius:10px;}
 /* PARTE ARTISTAS */
 
 /* PARTE GALERIA */
@@ -66,8 +93,8 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 .obras h4 {color:#BA2221;text-align: center;font-style: normal;font-size: 15px;text-transform: uppercase;}
 .obras {transition-timing-function: ease;
     transition-property: all;
-    transition: 1s;background-color:#E9DBBB; padding: 3%; margin: 5%; border-radius: 62px;}
-.obras:hover {transform: scale(1.2, 1.2) }
+    transition: 1s;background-color:#E9DBBB; padding: 3%; margin: 5%; border-radius: 62px;filter:drop-shadow(0 0 20px black);}
+.obras:hover {transform: scale(1.2, 1.2);filter:drop-shadow(0 0 20px black);}
 
 figure { display: inline-block; position: relative;overflow: hidden;border-radius: 62px }
  
@@ -85,12 +112,12 @@ figure:hover figcaption {bottom: 0%; }
 /* PARTE FILOSOFIA */
 
 .carousel-item {transition: transform 2s ease, opacity .5s ease-out}
-.carousel {width: 90%;margin: auto;}
+.carousel {width: 70%;margin: auto; filter:drop-shadow(0 0 20px black);}
 .carousel-control-prev {left: -10%;}
 .carousel-control-next {right: -10%;}
 
 .carousel-dark .carousel-control-next-icon, .carousel-dark .carousel-control-prev-icon {filter: none;}
-.carousel-caption {bottom: 77%;}
+.carousel-caption {bottom: 74%;}
 
 .carousel-control-prev-icon {background-image : url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ba2221'><path d='M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z'/></svg>");}
 
@@ -108,12 +135,11 @@ figure:hover figcaption {bottom: 0%; }
     height: 59px;
     background-repeat: no-repeat;
     background-position: 50%;
-    background-size: 200% 200%;
-}
+    background-size: 200% 200%;}
 .carousel-dark .carousel-caption {font-family: 'Truculenta', sans-serif;}
 
 /* PARTE CONTACTO */
-.contacto {width: 35%;margin: auto;background-color:#E9DBBB;;}
+.contacto {width: 35%;margin: auto;background-color:#E9DBBB;filter:drop-shadow(0 0 20px black);}
 
 .formulario {width: 60%;border-color: #BA2221; font-family: 'Truculenta', sans-serif;
 padding: 0%;}
