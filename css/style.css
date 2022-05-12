@@ -51,6 +51,13 @@ header {background-color: white;}
     margin-bottom: 3%;
 }
 
+@keyframes texto
+{
+    0% {opacity: 0%}
+
+    100% {opacity: 100%} 
+ }
+ 
 /* PARTE HOME */
 
 .home {width: 100%; box-shadow: 0 0 20px black;margin-bottom: 2%;}
@@ -66,7 +73,7 @@ header {background-color: white;}
     font-size: 25px;font-family: 'Truculenta', sans-serif;;background-color: #BA2221;border-radius: 25px;width: 120%;
     margin-top: 21%; box-shadow: 0 0 20px black;font-weight:500}
 
-.dada {width: 80%;margin: auto;background: none;border: none;}
+.dada {width: 80%;margin: auto;background: none;border: none;animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
 
 .senor {margin-top: -42%; margin-left: -65%; position: relative; filter:drop-shadow(0 0 20px black);}
 
@@ -80,15 +87,30 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 /* PARTE HISTORIA*/
 .genero {background-color: #E9DBBB;border-radius: 10px;width: 80%;margin: auto;transition-timing-function: ease;
     transition-property: all;
-    transition: 1s;filter:drop-shadow(0 0 20px black);}
+    transition: 1s;filter:drop-shadow(0 0 20px black);animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
+
 .genero:hover {transform: scale(1.2, 1.2);filter:drop-shadow(0 0 20px black);}
 
 .txt {background-color: #BA2221;padding-left: 2%;}
 .gen {border-radius:10px;}
+
+.contenthisto {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
+.historia {flex-direction: column;padding: 5%;filter:drop-shadow(0 0 20px black);}
+.historia2 {flex-direction: column;margin-top: 40%;padding: 5%;filter:drop-shadow(0 0 20px black);}
+
+.histo {background-color:#ba2221; border: none;}
+.card-group>.card {margin-bottom: 10%;border-radius: 0px}
+.txthisto {text-align: center; background-color: #E9DBBB;filter:drop-shadow(0 0 20px black);
+    margin-top: auto; margin-bottom: 6%;border-radius: 10px; border: 10px solid #BA2221;}
+.origenes {transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s;}
+.origenes:hover {transform: scale(1.2, 1.2);}
+
 /* PARTE ARTISTAS */
 
 /* PARTE GALERIA */
-
+.galeria {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
 .obras h5 {color:#BA2221;text-align: center;}
 .obras h4 {color:#BA2221;text-align: center;font-style: normal;font-size: 15px;text-transform: uppercase;}
 .obras {transition-timing-function: ease;
@@ -111,7 +133,9 @@ figure:hover figcaption {bottom: 0%; }
 
 /* PARTE FILOSOFIA */
 
-.carousel-item {transition: transform 2s ease, opacity .5s ease-out}
+.carousel.pointer-event {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
+
+.carousel-item {transition: transform 2s ease, opacity .5s ease-out;}
 .carousel {width: 70%;margin: auto; filter:drop-shadow(0 0 20px black);}
 .carousel-control-prev {left: -10%;}
 .carousel-control-next {right: -10%;}
@@ -139,7 +163,7 @@ figure:hover figcaption {bottom: 0%; }
 .carousel-dark .carousel-caption {font-family: 'Truculenta', sans-serif;}
 
 /* PARTE CONTACTO */
-.contacto {width: 35%;margin: auto;background-color:#E9DBBB;filter:drop-shadow(0 0 20px black);}
+.contacto {width: 35%;margin: auto;background-color:#E9DBBB;filter:drop-shadow(0 0 20px black);animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
 
 .formulario {width: 60%;border-color: #BA2221; font-family: 'Truculenta', sans-serif;
 padding: 0%;}
