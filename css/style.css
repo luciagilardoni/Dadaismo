@@ -109,6 +109,19 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 
 /* PARTE ARTISTAS */
 
+.artista {border-radius: 73px;margin: auto;;border: 10px solid #E9DBBB;background-color: #E9DBBB;animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
+
+.imagen {width: 30%;margin: auto;transition: all 0.3s;filter:drop-shadow(0 0 20px black);}
+.imagen:hover {transform: scale(1.2, 1.2);filter:drop-shadow(0 0 20px black);}
+.art {margin: auto;display: flex;flex-wrap: wrap;width: 80%;}
+
+.figure-caption1 {color:#E9DBBB;font-size: 20px;font-family: 'Truculenta', sans-serif;text-align: center;
+    text-transform: uppercase;position: absolute;left: 0%;bottom: -95%; background-color: rgb(186, 34, 33);width: 100%; 
+    padding: 3%; }
+
+.figure1 { display: inline-block; position: relative;overflow: hidden;border-radius: 73px }
+ 
+
 /* PARTE GALERIA */
 .galeria {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
 .obras h5 {color:#BA2221;text-align: center;}
