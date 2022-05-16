@@ -120,7 +120,12 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
     padding: 3%; }
 
 .figure1 { display: inline-block; position: relative;overflow: hidden;border-radius: 73px }
- 
+
+.bio {margin: auto;filter:drop-shadow(0 0 20px black);}
+.ver {margin: auto;color: #E9DBBB;background-color: #ba2221;border: #BA2221;font-family: 'Truculenta', 
+    sans-serif;text-align: center;font-size: 15px;transition: all 0.3s;}
+.ver:hover {margin: auto;color: #E9DBBB;background-color: #ba2221;border: #BA2221;font-family: 'Truculenta', 
+        sans-serif;text-align: center;font-size: 15px;transform: scale(1.2, 1.2);}
 
 /* PARTE GALERIA */
 .galeria {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
