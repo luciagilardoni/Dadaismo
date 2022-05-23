@@ -60,7 +60,7 @@ header {background-color: white;}
  
 /* PARTE HOME */
 
-.home {width: 100%; box-shadow: 0 0 20px black;margin-bottom: 2%;}
+.home {width: 100%; box-shadow: 0 0 20px black;margin-bottom: 2%;animation-name: texto; animation-duration: 2s;animation-delay: 0s;animation-fill-mode:backwards}
 
 .fondo {background-image: url("../img/fondo.jpg");
     background-repeat: no-repeat;
@@ -68,18 +68,9 @@ header {background-color: white;}
     background-attachment: fixed;
     background-size: cover ;padding: 5%;}
 
+.home2 {animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards}
 
-.dadatexto {color: #E9DBBB;;padding:5%;
-    font-size: 25px;font-family: 'Truculenta', sans-serif;;background-color: #BA2221;border-radius: 25px;width: 120%;
-    margin-top: 21%; box-shadow: 0 0 20px black;font-weight:500}
-
-.dada {width: 80%;margin: auto;background: none;border: none;animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}
-
-.senor {margin-top: -42%; margin-left: -65%; position: relative; filter:drop-shadow(0 0 20px black);}
-
-.img-fluid {max-width:200%;}
-
-p {font-size: 22px;font-family: 'Truculenta', sans-serif;}
+p {font-size: 22px;font-family: 'Truculenta', sans-serif;text-align: justify;}
 
 h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;font-family: 'Truculenta', sans-serif;}
 .rojo {font-style: italic;font-size: 25px;color: #BA2221;}
@@ -100,7 +91,7 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 
 .histo {background-color:#ba2221; border: none;}
 .card-group>.card {margin-bottom: 10%;border-radius: 0px}
-.txthisto {text-align: center; background-color: #E9DBBB;filter:drop-shadow(0 0 20px black);
+.txthisto {text-align:justify; background-color: #E9DBBB;filter:drop-shadow(0 0 20px black);
     margin-top: auto; margin-bottom: 6%;border-radius: 10px; border: 10px solid #BA2221;}
 .origenes {transition-timing-function: ease;
     transition-property: all;
@@ -121,7 +112,9 @@ h5 {font-style: italic;font-size: 25px;color: #E9DBBB;text-transform: uppercase;
 
 .figure1 { display: inline-block; position: relative;overflow: hidden;border-radius: 73px }
 
-.bio {margin: auto;filter:drop-shadow(0 0 20px black);}
+.bio {margin: auto;filter:drop-shadow(0 0 20px black);background-color: #E9DBBB;border-radius: 10px;width: 80%;margin: auto;transition-timing-function: ease;
+   ;animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;text-align: justify;}
+
 .ver {margin: auto;color: #E9DBBB;background-color: #ba2221;border: #BA2221;font-family: 'Truculenta', 
     sans-serif;text-align: center;font-size: 15px;transition: all 0.3s;}
 .ver:hover {margin: auto;color: #E9DBBB;background-color: #ba2221;border: #BA2221;font-family: 'Truculenta', 
@@ -178,7 +171,7 @@ figure:hover figcaption {bottom: 0%; }
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: 200% 200%;}
-.carousel-dark .carousel-caption {font-family: 'Truculenta', sans-serif;}
+
 
 /* PARTE CONTACTO */
 .contacto {width: 35%;margin: auto;background-color:#E9DBBB;filter:drop-shadow(0 0 20px black);animation-name: texto; animation-duration: 4s;animation-delay: 2s;animation-fill-mode:backwards;}

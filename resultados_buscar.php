@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dadaísmo | Marcel Duchamp</title>
+    <title>Dadaísmo | Busqueda</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
@@ -21,7 +21,7 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body> 
-    <header>
+<header>
         <nav class="navbar navbar-expand-md navbar-light">
             <div class="container-fluid ms-5 me-5">
               <a class="navbar-brand" href="index.html">
@@ -47,67 +47,71 @@
                   <li class="nav-item"> <a class="nav-link" href="filosofia.html">Filosofía</a></li>
                   <li class="nav-item"> <a class="nav-link" href="contacto.html">Contacto</a></li>
                 </ul>
-                <form class="d-flex">
-                  <input class="form-control me-2" type="search" method="post" placeholder="Buscar..." aria-label="Search" name="buscar">
-                  <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
-                </form>
+
+                  <form class="d-flex" method="post" action="resultados_buscar.php">
+                    <input class="form-control me-2" type="search"  placeholder="Buscar..." aria-label="Search" name="buscar">
+                    <button class="btn btn-outline-success" type="submit"><i class="fa fa-search" aria-hidden="true"></i></button>
+                  </form>
+          
               </div>
             </div>
           </nav>
                 
     </header>
 <section>
-  <div class="container-fluid fondo">
-    <div class="titulos pt-2"><h1>Marcel Duchamp</h1></div>
-    <div class="card mb-5 bio">
-      <div class="row g-0">
-<div class="col-md-4">
-          <img src="img/duchamp2.jpg" class="img-fluid h-100 gen" width="100%" alt="...">
-        </div>
+<?php
+	include('conexion.php');
 
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title mt-1 txt">1887-1968</h5>
-            <p class="card-text">Fue un <b>artista francés</b> de tendencia dadaísta. Es reconocido por su principal aporte al movimiento conocido como <b>ready-mades</b>. Es considerado el <b>artista más influyente</b> del siglo XX
-              Sus obras más destacadas fueron <b>El gran vidrio</b> (1915), <b>Rueda sobre un taburete </b> (1913) y  <b>la Fuente</b> (1915).<br>
-              Impresionista a los 16 años, fauvista a los 19 y cubista a los 24,  un terrorista que acabaría 
-              encontrando en el dadaísmo su libertad y la forma de reírse de todo y de todos, incluido él mismo. 
-              <br> Este movimiento, condenado a su autodestrucción, trataría por todos los medios (sobre todo con ironía, absurdo y mala hostia) 
-              acabar con el arte narcotizado de las instituciones.<br>
-              Duchamp olió que la pintura estaba muerta, pudriéndose en los museos, y descubrió la belleza en lo 
-              coyuntural, lo fugaz y lo superficial. 
-              A partir de entonces el arte ya no se veía con los ojos, sino con la mente. Resultó que la belleza podía estar en otros sitios.
-            </p>
-            <a href="galeria.html"> <button type="button" class="btn btn-primary btn-sm ver">Sus obras</button></a>
-          </div>
-          
-        </div>
-     
+	$buscar = $_POST['buscar'];
+	echo "Su consulta: <em>".$buscar."</em><br>";
+
+	$consulta = mysqli_query($conexion, "SELECT * FROM artistas WHERE nombre LIKE '%$buscar%' OR apellido LIKE '%$buscar%' ");
+?>
+
+	<p>Cantidad de Resultados: 
+	<?php
+		$nros=mysqli_num_rows($consulta);
+		echo $nros;
+	?>
+	</p>
     
-      
-    </div>
-  </div>
+	<?php
+		while($resultados=mysqli_fetch_array($consulta)) {
+	?>
+    <p>
+    <?php	
+			echo "<div class='titulos pt-2'>".$resultados['nombre'] . " ";
+			echo $resultados['apellido'] . "</div>";
+			echo $resultados['bio'];
+			
+	?>
+    </p>
+	<img src="<?php echo $resultados['foto']; ?>">
 
-</div>
+    <hr/>
+    <?php
+		}
+
+		mysqli_free_result($consulta);
+		mysqli_close($conexion);
+
+	?>
+
 </section>
-
-
-
-    <footer class="container-fluid  p-3">
+<footer class="container-fluid p-3">
         <div class="container footer">
             <div class="row">
                 <div class="col-lg-8 col-md-8 col-sm-12 text-center">
                 <span> © 2022 DADAISMO. TODOS LOS DERECHOS RESERVADOS- POLITICA DE PRIVACIDAD. </span>
             </div>
             <div class="col-lg-4 col-md-4 col-sm-12 d-flex justify-content-around footer">
-                    <div><a href="https://www.instagram.com/taylorswift/" target="_blank"> <i class="fa fa-instagram"></i></a> </div>      
-                    <div><a href="https://www.facebook.com/TaylorSwift" target="_blank"> <i class="fa fa-facebook-square"></i> </a> </div>
-                    <div><a href="https://twitter.com/taylorswift13" target="_blank"> <i class="fa fa-twitter"></i> </a> </div>
+                    <div><a href="https://www.instagram.com" target="_blank"> <i class="fa fa-instagram"></i></a> </div>      
+                    <div><a href="https://www.facebook.com" target="_blank"> <i class="fa fa-facebook-square"></i> </a> </div>
+                    <div><a href="https://twitter.com" target="_blank"> <i class="fa fa-twitter"></i> </a> </div>
             </div> 
             </div>
         </div>
+
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
-    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
