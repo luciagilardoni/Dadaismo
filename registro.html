@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Dadaísmo | Francis Picabia</title>
+    <title>Dadaísmo | Registro</title>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> 
 
@@ -59,32 +59,51 @@
     </header>
 <section>
   <div class="container-fluid fondo">
-    <div class="titulos pt-2"><h1>Francis Picabia</h1></div>
-    <div class="card mb-5 bio">
-      <div class="row g-0">
-<div class="col-md-4">
-          <img src="img/picabia2.jpg" class="img-fluid h-100 gen" width="100%" alt="...">
+    <div class="titulos pt-2"><h1>Crear cuenta</h1></div>
+<div class="row">     
+  <div class="container pt-3 pb-3 col-md-6 contacto">
+      <div class="container texto text-center"><h5>¡Accede a tu cuenta!<h5> <h4> Asi podes mirar tu contenido exclusivo del mes.</h4></div>
+  <div class="container formulario col-md-12">
+      <form  action="registro.php" method="post" class="row" netlify >
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label"></label>
+          <input type="text" class="form-control campos" id="validationDefault01" name="nombre"  placeholder="Nombre" required>
         </div>
-
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title mt-1 txt">1879-1953</h5>
-            <p class="card-text">Pintor francés de origen <b>hispanocubano</b>. La vanguardia francesa <b>no sería lo mismo</b> sin la figura de Francis Picabia.
-              <br><b>Artista multidisciplinar</b>, su trabajo abarca <b>muchísimos movimientos artísticos</b> en distintas facetas, aunque sin duda la pintura 
-              fue la principal. <br>Comenzó a pintar fascinado por el impresionismo, pero con la llegada de las vanguardias se introdujo en el cubismo.
-              <br>Cultivó un <b>arte moderno</b>, pero serio hasta que apareció en su vida el <b>dadaísmo</b>. La obra de Picabia es muy variada, pero abundan en ella las <b>formas mecanomorfas</b>, 
-              <b>máquinas</b> que sin duda deben mucho al <b>dinamismo futurista</b>. También se interesó por la <b>abstracción</b> como forma más eficaz de plasmar <b>sentimientos
-               y emociones.</b>  
-            </p>
-            <a href="galeria.html"> <button type="button" class="btn btn-primary btn-sm ver">Sus obras</button></a>
-          </div>
-          
+        <div class="col-md-12">
+          <label for="validationDefault01" class="form-label"></label>
+          <input type="text" class="form-control campos" id="validationDefault01" name="apellido"  placeholder="Apellido" required>
         </div>
-     
+        <div class="col-md-12">
+          <label for="validationDefaultUsername" class="form-label"></label>
+            <input type="email" class="form-control campos" id="validationDefaultUsername" name="email" placeholder="Email" aria-describedby="inputGroupPrepend2" required>
+        </div> 
     
+          <div class="col-md-12">
+            <label for="validationDefault01" class="form-label"></label>
+            <input type="text" class="form-control campos" id="validationDefault01" name="usuario"  placeholder="Usuario" required>
+          </div>
+          <div class="col-md-12">
+            <label for="validationDefault02" class="form-label"></label>
+            <input type="password" class="form-control campos" id="validationDefault02" name="contraseña" placeholder="Contraseña"
+            required>
+          </div>
       
-    </div>
-  </div>
+        <div class="col-12">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" name="terminos" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Acepto términos y condiciones.
+            </label>
+          </div>
+        </div>
+          <div class="col-12 text-center">
+            <button class="btn btn-primary enviar mt-3" type="submit">Crear</button>
+          </div>
+        </form></div>
+      <div>
+<hr>
+<p class="opcion">¿Sos usuario? <a href="login.html">Accede a tu cuenta</a></p>
+
 </div>
 </section>
 

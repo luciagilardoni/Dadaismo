@@ -3,7 +3,7 @@ body{overflow-x: hidden;}
 
 header {background-color: white;}
 
-.menu a {text-transform: uppercase;font-family: 'Truculenta', sans-serif;letter-spacing: 2px;}
+.menu a {text-transform: uppercase;font-family: 'Truculenta', sans-serif;letter-spacing: 2px;color:#BA2221}
 
 .navbar-collapse {justify-content: space-between;;margin-left: 40%;}
 
@@ -182,11 +182,22 @@ padding: 0%;}
 .campos {border-color: #BA2221; border-radius: 10px;font-family: 'Truculenta', sans-serif;background-color:#E9DBBB; border: 3px solid #BA2221;}
 .campos:hover {background-color: #BA2221;}
 
-.enviar {margin: auto;background-color: #BA2221;color: #E9DBBB;border: #BA2221;margin: 1%;}
-.enviar:hover {margin: auto;background-color: #BA2221;color:#E9DBBB;border: #BA2221;margin: 1%;}
+.enviar {margin: auto;background-color: #BA2221;color: #E9DBBB;border: #BA2221;margin: 1%;transition: all 0.3s;}
+.enviar:hover {margin: auto;background-color: #BA2221;color:#E9DBBB;border: #BA2221;margin: 1%;transform: scale(1.2, 1.2)}
 
 .contacto h5 {color:#BA2221;text-align: center;text-transform: uppercase;}
 .contacto h4 {color:#BA2221;text-align: center;font-style: normal;font-size: 15px;}
+
+/* PARTE LOGIN */
+.opcion {font-size: 22px;font-family: 'Truculenta', sans-serif;text-align:center;
+    text-decoration: none;transition-timing-function: ease;
+    transition-property: all;
+    transition: 1s}
+
+.opcion a {color:#BA2221;;
+   text-decoration: none;transition: all 0.3s;}
+     
+.opcion a:hover {color:#E9DBBB;transform: scale(1.2, 1.2);background: #BA2221;border-radius:10px;padding: 2%;}
 
 /* PARTE FOOTER */
 
